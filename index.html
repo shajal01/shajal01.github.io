@@ -1,0 +1,288 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sayd Shajal</title>
+      <link rel="shortcut icon" href="assets/img/title-icon.webp" type="image/x-icon" />
+      <meta name="description" content="Software Engineer" />
+      <!-- Open Graph -->
+      <meta property="og:title" content="Sayd Shajal" />
+      <meta property="og:image" content="assets/img/page-logo.webp" />
+      <meta property="og:description" content="Software Engineer" />
+      <!-- Materialize -->
+      <!--Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+      <!-- Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <!-- /Materialize -->
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <!-- Custom css -->
+      <link rel="stylesheet" href="./assets/css/main.css" />
+   </head>
+
+   <body>
+      <!-- Header (contains: sidebarTriggerBtn, navBar) -->
+      <section id="header" class="header">
+         <!-- NavBar -->
+         <nav class="header__navbar col right">
+            <div class="header__navbar__left">
+               <!-- Toggle btn for sidebar -->
+               <a data-target="slide-out" class="header__navbar__left--sidebar-trigger-btn sidenav-trigger">
+                  <i class="fas fa-user-alt icon"></i>
+               </a>
+               <p class="header__navbar__left--name-logo">Sayd Shajal</p>
+            </div>
+            <div class="header__navbar__right nav-wrapper">
+               <ul id="nav-mobile" class="nav-links hide-on-small-only table-of-contents">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+               </ul>
+            </div>
+         </nav>
+      </section>
+
+      <!-- Sidebar (contains: sidebar, toggleBtn, links) -->
+      <section class="sidebar">
+         <ul class="sidenav z-depth-0" id="slide-out">
+            <div class="side-nav">
+               <!-- Toggle btn to open navigation menu for small screen -->
+               <div class="fixed-action-btn hide-on-med-only hide-on-large-only show-on-small">
+                  <a class="fixed-action-btn__toggle-btn pulse">
+                     <i class="material-icons menu-btn">menu</i>
+                  </a>
+                  <ul class="fixed-action-btn__floating-btn">
+                     <li>
+                        <a class="fixed-action-btn__floating-btn--services btn-floating sidenav-close" href="#services"
+                           ><i class="icon material-icons">miscellaneous_services</i></a
+                        >
+                     </li>
+                     <li>
+                        <a class="fixed-action-btn__floating-btn--about btn-floating sidenav-close" href="#about">
+                           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                              <path
+                                 d=" M 15 3 C 7.82 3 2 7.925 2 14 C 2 16.676142 3.1322222 19.126093 5.0097656 21.033203 C 5.0476793 21.127522 6.0110131 23.606674 3.1582031 26.134766 A 0.5 0.5 0 0 0 3 26.5 A 0.5 0.5 0 0 0 3.5 27 A 0.5 0.5 0 0 0 3.6074219 26.988281 C 6.4832831 26.817905 8.9434573 25.390739 10.445312 24.291016 C 11.864706 24.741137 13.394827 25 15 25 C 22.18 25 28 20.075 28 14 C 28 7.925 22.18 3 15 3 z M 15 7.5 C 15.828 7.5 16.5 8.172 16.5 9 C 16.5 9.828 15.828 10.5 15 10.5 C 14.172 10.5 13.5 9.828 13.5 9 C 13.5 8.172 14.172 7.5 15 7.5 z M 14 13 L 16 13 L 16 20 L 14 20 L 14 13 z"
+                              ></path>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="fixed-action-btn__floating-btn--home btn-floating sidenav-close" href="#"
+                           ><i class="icon material-icons">home</i></a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- Sidebar-Profile -->
+               <div class="side-nav__profile user-view">
+                  <div class="bg-img background">
+                     <img src="./assets/img/sayd-02.png" alt="profile-background" />
+                  </div>
+                  <div class="profile-details">
+                     <img
+                        class="profile-details--img circle"
+                        src="https://avatars.githubusercontent.com/u/93539819"
+                        alt="profile"
+                     />
+                     <span class="profile-details--name name">SAYD SHAJAL</span>
+                     <span class="profile-details--mail email">saydshajal01@gmail.com</span>
+                  </div>
+               </div>
+
+               <!-- Sidebar-Links -->
+               <div class="side-nav__links">
+                  <li><a class="subheader">Social</a></li>
+                  <li>
+                     <a
+                        class="waves-effect"
+                        href="https://in.linkedin.com/in/saydshajal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <i class="fab fa-linkedin-in"></i>LinkedIn
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        class="waves-effect"
+                        href="https://github.com/shajal01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <i class="fab fa-github"></i>Github
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        class="waves-effect"
+                        href="https://twitter.com/saydshajal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <i class="fab fa-twitter"></i>Twitter
+                     </a>
+                  </li>
+               </div>
+            </div>
+         </ul>
+      </section>
+
+      <!-- Home -->
+      <section id="home" class="home section scrollspy" style="background-image: url(assets/img/sayd-img.jpg)">
+         <div class="home__profile-intro">
+            <p class="hello">Hello, I'm</p>
+            <h1 class="name">S<span>ayd</span>&nbsp;S<span>hajal</span></h1>
+            <p class="title">Software Engineer</p>
+         </div>
+         <div class="home__fade-shadow"></div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about section scrollspy">
+         <div class="container">
+            <h2 class="about--heading">About Me</h2>
+            <div class="about__desc">
+               <p class="about__desc--text">
+                  I am a passionate software engineer with a strong background in designing and developing innovative
+                  software solutions. With 2 years of experience, My love for problem-solving and attention to detail
+                  enable me to create efficient and robust software systems that meet client requirements and exceed
+                  expectations. I thrive in collaborative environments, working closely with cross-functional teams to
+                  deliver high-quality solutions. Through continuous learning and staying up-to-date with the latest
+                  industry trends, I strive to leverage cutting-edge technologies to drive innovation and create
+                  impactful software applications.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services section scrollspy">
+         <div class="container">
+            <h2 class="services--heading">Services</h2>
+            <div class="services__desc1">
+               <p class="services__desc1--text">
+                  I have honed my skills in programming languages such as <span class="skills-text">Python</span>,
+                  <span class="skills-text">MySQL</span>, <span class="skills-text">HTML</span>,
+                  <span class="skills-text">CSS</span>, <span class="skills-text">JavaScript</span>, and
+                  <span class="skills-text">Git</span> , and have expertise in various frameworks and tools like
+                  <span class="skills-text">Django</span>, <span class="skills-text">Django Rest</span>,
+                  <span class="skills-text">Apache</span>, <span class="skills-text">TypeScript</span>,
+                  <span class="skills-text">OpenHab</span>, <span class="skills-text">Bootstrap</span>,
+                  <span class="skills-text">React</span>. And also used apis of
+                  <span class="skills-text">Zeordha kite</span>, <span class="skills-text">Google login</span>,
+                  <span class="skills-text">Facebook login</span>, <span class="skills-text">Github login</span>,
+                  <span class="skills-text">Razorpay</span>, <span class="skills-text">Paypal</span>,
+                  <span class="skills-text">Google Recaptcha</span>,
+                  <span class="skills-text">Mobile OTP (Twilio, MSG91 )</span>.
+               </p>
+            </div>
+            <div class="services__card">
+               <div class="services__card--one card">
+                  <div class="card-image waves-effect waves-block">
+                     <img class="activator" src="./assets/img/services_back_end_img.png" alt="webpage-development" />
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Back-end Development</span>
+                  </div>
+                  <div class="card-reveal">
+                     <span class="card-title grey-text text-darken-4"
+                        >Back-end Development<i class="material-icons right">close</i></span
+                     >
+                     <br />
+                     <p class="card-reveal__more-info">
+                        Back-end development means working on server-side software, which focuses on everything you
+                        can&#39;t see on a website. Back-end developers ensure the website performs correctly, focusing
+                        on databases, back-end logic, application programming interface (APIs), architecture, and
+                        servers. They use code that helps browsers communicate with databases, store, understand, and
+                        <span class="card-reveal__more-info--read-more">
+                           <a
+                              href="https://www.coursera.org/articles/back-end-developer#:~:text=What%20is%20back%2Dend%20development,)%2C%20architecture%2C%20and%20servers."
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><b> ...read more</b></a
+                           >
+                        </span>
+                     </p>
+                  </div>
+               </div>
+               <div class="services__card--two card">
+                  <div class="card-image waves-effect waves-block">
+                     <img class="activator" src="./assets/img/services_home_auto_img.svg" alt="react-development" />
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">Home Automation</span>
+                  </div>
+                  <div class="card-reveal">
+                     <span class="card-title grey-text text-darken-4"
+                        >Home Automation<i class="material-icons right">close</i></span
+                     >
+                     <br />
+                     <p class="card-reveal__more-info">
+                        Home automation or domotics[1] is building automation for a home. A home automation system will
+                        monitor and/or control home attributes such as lighting, climate, entertainment systems, and
+                        appliances. It may also include home security such as access control and alarm systems.
+                        <br /><br />
+                        The phrase smart home refers to home automation devices that have
+                        <span class="card-reveal__more-info--read-more">
+                           <a
+                              href="https://en.wikipedia.org/wiki/Home_automation#:~:text=Home%20automation%20or%20domotics%5B1%5D%20is%20building%20automation%20for%20a%20home.%20A%20home%20automation%20system%20will%20monitor%20and/or%20control%20home%20attributes%20such%20as%20lighting%2C%20climate%2C%20entertainment%20systems%2C%20and%20appliances.%20It%20may%20also%20include%20home%20security%20such%20as%20access%20control%20and%20alarm%20systems."
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><b> ...read more</b></a
+                           >
+                        </span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="services__desc2">
+               <p class="services__desc2--text">
+                  Get in touch to discuss how I can help bring your software projects to life!
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="footer">
+         <div class="footer__row row">
+            <!-- <div class="footer__row--social-links col m6 s12"> -->
+            <div class="footer__row--social-links col s12">
+               <a href="https://in.linkedin.com/in/saydshajal" target="_blank" rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+               ></a>
+               <a href="https://github.com/shajal01" target="_blank" rel="noopener noreferrer"
+                  ><i class="fab fa-github-square"></i
+               ></a>
+               <a href="https://twitter.com/saydshajal" target="_blank" rel="noopener noreferrer"
+                  ><i class="fab fa-twitter-square"></i
+               ></a>
+            </div>
+         </div>
+      </section>
+
+      <!-- *** Scripts *** -->
+      <!-- jQuery -->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <!-- Materialize : Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- Custom script -->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>

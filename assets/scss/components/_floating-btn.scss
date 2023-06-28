@@ -1,0 +1,104 @@
+@use "../base/base";
+
+.fixed-action-btn {
+   width: fit-content !important;
+   height: 0 !important;
+   position: absolute !important;
+   top: 10.95rem !important;
+   right: 0.8rem !important;
+   z-index: 998 !important;
+   &.direction-bottom {
+      padding: 0 !important;
+   }
+   &__toggle-btn {
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      background-color: #1a1a1a !important;
+      cursor: pointer !important;
+      .material-icons {
+         color: base.$color_rgb_150 !important;
+         font-size: 2rem !important;
+      }
+   }
+   &__floating-btn {
+      width: fit-content !important;
+      position: unset !important;
+      margin: 0 auto !important;
+      > * {
+         margin: 0.6rem 0 0 0 !important;
+      }
+      &--home,
+      &--about,
+      &--services,
+      &--works {
+         width: 36px !important;
+         height: 36px !important;
+         display: flex !important;
+         justify-content: center !important;
+         align-items: center !important;
+         margin: 0 !important;
+         padding: 0 !important;
+         background-color: base.$color_rgb_150 !important;
+         // background-color: #f0f !important;
+         .icon {
+            margin: 0 !important;
+            font-size: 1.4rem !important;
+            // color: base.$color_rgb_40 !important;
+            color: #1a1a1a !important;
+            // fill: base.$color_rgb_40 !important;
+            fill: #1a1a1a !important;
+         }
+      }
+      &--home {
+         .icon {
+            font-size: 1.65rem !important;
+         }
+      }
+      &--about {
+         .icon {
+            width: 1.4rem !important;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 350px) {
+   .fixed-action-btn {
+      top: 11.22rem !important;
+      right: 0.7rem !important;
+      &__toggle-btn {
+         width: 43px !important;
+         height: 43px !important;
+         .material-icons {
+            font-size: 1.8rem !important;
+         }
+      }
+      &__floating-btn {
+         &--home,
+         &--about,
+         &--services,
+         &--works {
+            width: 32px !important;
+            height: 32px !important;
+            .icon {
+               font-size: 1.2rem !important;
+            }
+         }
+         &--home {
+            .icon {
+               font-size: 1.5rem !important;
+            }
+         }
+         &--about {
+            .icon {
+               width: 1.2rem !important;
+               margin-left: 0.8px !important;
+            }
+         }
+      }
+   }
+}

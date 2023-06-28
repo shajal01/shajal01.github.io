@@ -1,0 +1,43 @@
+@use "sass:map";
+@forward "colors";
+@forward "fonts";
+
+//* Variables
+// Color variables
+@use "colors" as *;
+// Font variables
+@use "fonts" as *;
+
+$section-heading-size: 2.5rem;
+
+// $sideNav-bg-color: $color_rgb_250;
+$sideNav-bg-color: #c8c8c8;
+
+//* Maps
+$sideNav-widths: (
+   "full-350px": 21.4rem,
+   "350px-300px": 18rem,
+   "300px-0px": 15rem,
+);
+$carousel-widths: (
+   "default": 370px,
+   "max_500px": 280px,
+   "max_350px": 240px,
+);
+$carousel-heights: (
+   "max_500px": 160px,
+   "max_350px": 140px,
+);
+
+//* Functions
+@function sideNav-out-width($key) {
+   @return map.get($sideNav-widths, $key);
+}
+@function sideNav-in-width($key) {
+   $key-width: map.get($sideNav-widths, $key);
+   @if $key-width == map.get($sideNav-widths, "full-350px") {
+      @return $key-width - 2.57;
+   } @else {
+      @return $key-width - 2.2;
+   }
+}

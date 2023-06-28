@@ -1,0 +1,14 @@
+// sass -w assets/scss/main.scss assets/css/main.css
+// sass --style=compressed assets/scss/main.scss assets/css/main.css
+
+@use "./base/global";
+
+@use "./base/reset";
+
+@use "./base/base";
+
+@use "./components/floating-btn";
+
+@use "./layout/styles";
+
+@use "./layout/media-query";

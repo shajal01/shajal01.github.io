@@ -1,0 +1,129 @@
+@use "sass:map";
+@use "../base/base";
+
+@media only screen and (max-width: 750px) {
+   //* Services Section
+   .services {
+      &__card {
+         &--one,
+         &--two {
+            .card-image {
+               img {
+                  height: 15rem !important;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   //* Home Section
+   .home {
+      height: 65vh;
+   }
+
+   //* About Section
+   .about {
+      padding-top: 0;
+   }
+
+   //* Services Section
+   .services {
+      &__card {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         &--one,
+         &--two {
+            margin: 0 0 2rem 0 !important;
+            width: 25rem !important;
+         }
+      }
+   }
+
+   //* Footer Section
+   .footer {
+      height: 3rem;
+      &__row {
+         &--social-links {
+            margin: 0.7rem 0 0 0;
+            > * {
+               font-size: 1.7rem;
+               margin: 0 0.6rem;
+            }
+         }
+         &--copyright {
+            color: base.$color_rgb_120;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 450px) {
+   //* Services Section
+   .services {
+      &__card {
+         &--one,
+         &--two {
+            width: 85% !important;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 350px) {
+   //* Services Section
+   .services {
+      &__card {
+         &--one,
+         &--two {
+            .card-image {
+               img {
+                  height: 15rem !important;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 350px) and (min-width: 300px) {
+   //* Sidebar Section
+   .sidebar {
+      $sideNav-out-w: base.sideNav-out-width("350px-300px");
+      $sideNav-in-w: base.sideNav-in-width("350px-300px");
+
+      .sidenav {
+         width: $sideNav-out-w;
+         background: linear-gradient(to right,
+               base.$sideNav-bg-color 0%,
+               base.$sideNav-bg-color $sideNav-in-w,
+               transparent 80%,
+               transparent 100%);
+         .side-nav {
+            width: $sideNav-in-w;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 300px) {
+   //* Sidebar Section
+   .sidebar {
+      $sideNav-out-w: base.sideNav-out-width("300px-0px");
+      $sideNav-in-w: base.sideNav-in-width("300px-0px");
+
+      .sidenav {
+         width: $sideNav-out-w;
+         background: linear-gradient(to right,
+               base.$sideNav-bg-color 0%,
+               base.$sideNav-bg-color $sideNav-in-w,
+               transparent 80%,
+               transparent 100%);
+         .side-nav {
+            width: $sideNav-in-w;
+         }
+      }
+   }
+}
